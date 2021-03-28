@@ -1,5 +1,6 @@
-package org.example.mirai.plugin
+package com.denebw.mirai.testPlugin
 
+import com.denebw.mirai.testPlugin.PluginMain
 import net.mamoe.mirai.alsoLogin
 import net.mamoe.mirai.console.MiraiConsole
 import net.mamoe.mirai.console.plugin.PluginManager.INSTANCE.enable
@@ -12,7 +13,7 @@ suspend fun main() {
     PluginMain.load()
     PluginMain.enable()
 
-    val bot = MiraiConsole.addBot(123456, "") {
+    val bot = MiraiConsole.addBot(3273096184, "wangtansm233") {
         fileBasedDeviceInfo()
     }.alsoLogin()
 
