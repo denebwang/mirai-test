@@ -1,3 +1,7 @@
 grantedPermissionMap: 
   '*:*': 
     - console
+  'com.denebw.mirai.testplugin:*': 
+    - u1255958724
+  'com.denebw.mirai.testplugin:command.sendpic': 
+    - u1255958724

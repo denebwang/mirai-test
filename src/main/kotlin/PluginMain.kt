@@ -46,14 +46,15 @@ object PluginMain : KotlinPlugin(
         // 请不要使用 println, System.out.println 等标准输出方式. 请总是使用 logger.
 
         //MySimpleCommand.register() // 注册指令
-        MyCompositeCommand.register()
-
+        //MyCompositeCommand.register()
+        SendPicCommand.register()
 //        PERMISSION_EXECUTE_1 // 初始化, 注册权限
     }
 
     override fun onDisable() {
+        SendPicCommand.unregister()
         //MySimpleCommand.unregister() // 取消注册指令
-        MyCompositeCommand.unregister()
+        //MyCompositeCommand.unregister()
     }
 }
 //// 定义插件数据
