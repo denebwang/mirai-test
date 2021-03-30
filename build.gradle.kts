@@ -19,3 +19,7 @@ repositories {
     jcenter()
     maven("https://dl.bintray.com/kotlin/kotlin-eap")
 }
+
+dependencies {
+    implementation("com.google.code.gson:gson:2.8.6")
+}
