@@ -19,7 +19,7 @@ object SendPicCommand : CompositeCommand(
         if (subject === null)
             return
         PluginMain.logger.info(subject?.toString())
-        val image: Image = File("data/TestPlugin/1.jpg").uploadAsImage(subject?: return)
+        val image: Image = File("data/TestPlugin/1.jpg").uploadAsImage(subject ?: return)
         val receipt = sendMessage(image)
         GlobalScope.launch {
             receipt?.recallIn(10 * 1000)
